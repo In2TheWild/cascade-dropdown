@@ -1,0 +1,60 @@
+[
+  {
+    "level": 1,
+    "name": "prop_cm_title",
+    "title": "title",
+    "cascadeFrom": 0,
+    "items": [
+      {
+        "name": "Main1",
+        "value": "Main1"
+      },
+      {
+        "name": "Main2",
+        "value": "Main2"
+      },
+      {
+        "name": "Main3",
+        "value": "Main3"
+      }
+    ]
+  },
+  {
+    "level": 2,
+    "name": "prop_cm_description",
+    "title": "Description",
+    "cascadeFrom": 1,
+    "items": [
+      {
+        "link": [
+          "Main1",
+          "Main2"
+        ],
+        "name": "Sub11",
+        "value": "Sub11"
+      },
+      {
+        "link": [
+          "Main1"
+        ],
+        "name": "Sub12",
+        "value": "Sub12"
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "name": "prop_cm_author",
+    "title": "Author",
+    "cascadeFrom": 2,
+    "items": [
+      {
+        "link": [
+          "Sub11"
+        ],
+        "name": "Sub21",
+        "value": "Sub21"
+      }
+    ]
+  }
+]

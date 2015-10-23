@@ -1,0 +1,195 @@
+﻿[
+    {
+        "level": 1,
+        "name": "prop_Doctype_Doctype",
+        "title": "Document type",
+        "cascadfrom": null,
+        "items": [
+            {
+                "name": "เอกสารสัญญาเช่า",
+                "value": "เอกสารสัญญาเช่า",
+		"props": [
+                    {
+                        "name": "prop_BU_BU",
+                        "title": "BU (ส่วนบริหารกิจการ)",
+                        "type": "dropdown",
+                        "value": [ " ", "HOP", "SQ1", "CSS", "SSC", "CSD", "SKD", "SLG" ]
+                    },
+					{
+                        "name": "prop_CusCon_CusCon",
+                        "title": "เลขที่สัญญา"
+                    },
+					{
+                        "name": "prop_CusCode_CusCode",
+                        "title": "รหัสผู้เช่า"
+                    },
+					{
+                        "name": "prop_CusName_CusName",
+                        "title": "ชื่อผู้เช่า"
+                    },
+					{
+                        "name": "prop_Status_Status",
+                        "title": "สถานะ"
+                    },
+					{
+                        "name": "prop_Remark_Remark",
+                        "title": "หมายเหตุ"
+                    }
+                ]
+            },
+            {
+                "name": "ใบสำคัญสั่งจ่าย",
+                "value": "ใบสำคัญสั่งจ่าย",
+                "props": [
+                    {
+                        "name": "prop_BU_BU",
+                        "title": "BU (ส่วนบริหารกิจการ)",
+                        "type": "dropdown",
+                        "value": [ " ", "HOP", "SQ1", "CSS", "SSC", "CSD", "SKD", "SLG" ]
+                    },
+					{
+                        "name": "prop_VenPCPNo_VenPCPNo",
+                        "title": "เลขที Invoice"
+                    },
+					{
+                        "name": "prop_VenPINV_VenPINV",
+                        "title": "รหัสผู้เช่า"
+                    },
+					{
+                        "name": "prop_VenPName_VenPName",
+                        "title": "ชื่อ Vender จัดซื้อ"
+                    },
+					{
+                        "name": "prop_VenGiNo_VenGiNo",
+                        "title": "เลขที่ใบตรวจรับพัสดุ"
+                    },
+					{
+                        "name": "prop_Remark_Remark",
+                        "title": "หมายเหตุ"
+                    }
+                ]
+            },
+            {
+                "name": "ISO",
+                "value": "ISO",
+				"props": [
+                    {
+                        "name": "prop_isodoctype_isodoctype",
+                        "title": "ISO Document Type",
+                        "type": "dropdown",
+                        "value": [
+								"คู่มือคุณภาพ (QM)",
+								"ระเบียบปฏิบัติงาน (QPO,QPS)",
+								"วิธีปฏิบัติงาน (WI)",
+								"เอกสารสนับสนุน (SD etc)",
+								"แบบฟอร์ม (QPOF,QPSF)",
+								"เอกสารภายนอก",
+								"อื่นๆ"
+                        ]
+                    },
+                    {
+                        "name": "prop_isodepartment_isodepartment",
+                        "title": "ISO Cluster - Department",
+						"type": "dropdown",
+                        "value": [
+								"CSC-Creation Cluster - CMS-Corporation Media Design Section",
+								"CSC-Creation Cluster - CRS-Creation Section",
+								"CSC-Creation Cluster - RDS-R&D Section",
+								"CSC-Creation Cluster - CES-Cost Estimation Section",
+								"CSC-Creation Cluster - IDS-Industrail Section",
+								"CSC-Creation Cluster - PDS-Project Design Section",
+								"CSC-Creation Cluster - CLD-Controlling&logistics Section",
+								"",
+								"DVC-Delivery&Installtion Cluster - CLD-Controlling&logistics Section",
+								"DVC-Delivery&Installtion Cluster - LGS-Logistics Section",
+								"DVC-Delivery&Installtion Cluster - PSS-Planning&Scheduling Section",
+								"DVC-Delivery&Installtion Cluster - SCO-Site Coordinator Section",
+								"DVC-Delivery&Installtion Cluster - I1S-Installation Team 1 Section",
+								"DVC-Delivery&Installtion Cluster - I2S-Installation Team 2 Section",
+								"DVC-Delivery&Installtion Cluster - I3S-Installation Team 3 Section",
+								"DVC-Delivery&Installtion Cluster - ISD-Installation Section",
+								"",
+								"PDC-Production Cluster - PCS-Planning Section",
+								"PDC-Production Cluster - M1S-M1 Section",
+								"PDC-Production Cluster - M2S-M2 Section",
+								"PDC-Production Cluster - M3S-M3 Section",
+								"PDC-Production Cluster - M4S-M4 Section",
+								"PDC-Production Cluster - M5S-M5 Section",
+								"",
+								"PTC-Production&Technique Innovation Cluster - PTO-Produstion&Technique Innovation Section",
+								"PTC-Production&Technique Innovation Cluster - MTS-Maintenance Section",
+								"PTC-Production&Technique Innovation Cluster - PTO-Mock-Up Section",
+								"PTC-Production&Technique Innovation Cluster - PES-Engineer Section",
+								"",
+								"SCC-Supply Chain Management Cluster - IPS-Importing Section",
+								"SCC-Supply Chain Management Cluster - PRS-Procuring Section",
+								"SCC-Supply Chain Management Cluster - MFS-Material&Fitting Storage Section",
+								"SCC-Supply Chain Management Cluster - SWS-Semi Finished Warehose Section",
+								"",
+								"SMC-Sales&Marketing Cluster - AFS-After Sales Section",
+								"SMC-Sales&Marketing Cluster - IBS-International Business Sale Section",
+								"SMC-Sales&Marketing Cluster - PJB-Project B Sale Section",
+								"SMC-Sales&Marketing Cluster - PJG-Project G Sale Section",
+								"SMC-Sales&Marketing Cluster - MKV-Marketing Section",
+								"",
+								"SPC-Strategic Partner Cluster - CAS-Cost Accounting Section",
+								"SPC-Strategic Partner Cluster - GAS-General Accounting Section",
+								"SPC-Strategic Partner Cluster - ITS-Information Technology Section",
+								"SPC-Strategic Partner Cluster - HDS-Human Resource Development Section",
+								"SPC-Strategic Partner Cluster - HMS-Human Resource Management Section",
+								"SPC-Strategic Partner Cluster - CLS-Collection Section",
+								"SPC-Strategic Partner Cluster - FND-Financial Section",
+								"SPC-Strategic Partner Cluster - RPS-Receive-Payable Section"
+                        ]
+                    },
+                    {
+                        "name": "prop_isodocumentno_isodocumentno",
+                        "title": "ISO Document No"
+                    }
+                ]
+            },
+            {
+                "name": "Engineering Drewing",
+                "value": "Engineering Drewing"
+            },
+            {
+                "name": "Multimedia file",
+                "value": "Multimedia file"
+            },
+            {
+                "name": "Design",
+                "value": "Design"
+            },
+            {
+                "name": "Product",
+                "value": "Product",
+                "props": [
+                    {
+                        "name": "prop_Type_Type",
+                        "title": "Product Type",
+                        "type": "dropdown",
+                        "value": [
+                            "Water",
+                            "Alcohol",
+                            "Juice",
+                            "Can",
+                            "ไทย"
+                        ]
+                    },
+                    {
+                        "name": "prop_DocName_DocName",
+                        "title": "Document Name"
+                    },
+                    {
+                        "name": "prop_DocNo_DocNo",
+                        "title": "Document No"
+                    },
+                    {
+                        "name": "prop_Remark_Remark",
+                        "title": "Remark"
+                    }
+                ]
+            }
+        ]
+    }
+]
