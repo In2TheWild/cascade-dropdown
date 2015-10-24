@@ -23,4 +23,8 @@ let template = [
         ]
 ]
 
-toJson template "out/Hello.json"
+[<EntryPoint>]
+let go args =
+    printfn "Hello, world!"
+    toJson template "out/Hello.json"
+    0
