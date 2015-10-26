@@ -1,25 +1,24 @@
 
 #load "Service.fsx"
 open Service
+open Model.Template
+open System
 
-let text = createText
-let dp = createDropdown
+let text = createTextProperty
+let dp = createDropdownProperty
+let level = createLevel
+let item = createItem
 
 let template = [
-    createLevel 1 "prop_cm_title" "title" 0
+    level 1 "prop_cm_title" "title" 0
         [
-            text "Main1" "Main1"
-            text "Main2" "Main2"
-            text "Main3" "Main3"
+            item "Name" "Title" []
+                []
+            item "Name" "Title" []
+                []
         ]
-    createLevel 2 "prop_cm_description" "Description" 1
+    level 2 "prop_cm_title" "title" 0
         [
-            dp "Sub11" "Sub11" ["Main1"; "Main2"]
-            dp "Sub12" "Sub12" ["Main1"]
-        ]
-    createLevel 3 "prop_cm_author" "Author" 2
-        [
-            dp "Sub21" "Sub21" ["Sub11"]
         ]
 ]
 

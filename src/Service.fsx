@@ -16,11 +16,14 @@ let createLevel level name title cascadeFrom (items:Item list) =
         Items = items
     }
 
-let createText name value =
-    TextItem( Name = name, Value = value)
+let createItem name value link props =
+    Item(Name = name, Value = value, Link = link, Prop = props)
 
-let createDropdown name value links =
-    DropdownItem( Name = name, Value = value, Link = links)
+let createTextProperty name title =
+    TextProperty(Name = name, Title = title)
+
+let createDropdownProperty name title values  =
+    DropdownProperty( Name = name, Title = title, Value = values)
 
 let toJson (level:obj) (file: string)=
     let setting  = JsonSerializerSettings()
